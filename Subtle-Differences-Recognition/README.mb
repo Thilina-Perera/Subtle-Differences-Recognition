@@ -1,0 +1,50 @@
+# Subtle Differences Recognition – Summer 2025
+
+This project was developed as part of the Subtle Differences Recognition Challenge (Summer 2025). It focuses on identifying subtle visual differences—such as slight changes in color, shape, or texture—between pairs of visually similar images using deep learning techniques.
+
+## Project Overview
+
+We built a Convolutional Neural Network (CNN) model to classify image pairs into "before" and "after" categories, detecting minute differences based on a multi-class classification approach. This challenge scenario was provided by researchers from AIST Japan and Edith Cowan University, Australia.
+
+## Dataset
+
+Subtle-Diff Dataset:
+- 2,800+ image pairs
+- 12,800+ annotations
+- Human-generated captions describing subtle visual differences
+
+## Technologies Used
+
+- Python 3.13.1
+- TensorFlow and Keras
+- OpenCV (cv2), imghdr
+- NumPy, Matplotlib, OS
+- JupyterLab
+- TensorBoard for performance monitoring
+
+## Model Features
+
+- Custom CNN model inspired by LeNet-5 and VGG
+- Image preprocessing: filtering corrupt images, normalization
+- Dataset split: 70% training, 20% validation, 10% testing
+- Binary classification using sigmoid activation
+- Evaluation using precision, recall, and binary accuracy
+
+## Results
+
+| Metric          | Value    |
+|-----------------|----------|
+| Precision       | 92.54%   |
+| Recall          | 83.81%   |
+| Binary Accuracy | 89.41%   |
+
+## Potential Improvements
+
+- Increase dataset size for better generalization
+- Data augmentation to improve robustness
+- Hyperparameter tuning (learning rate, batch size, etc.)
+- Apply transfer learning with pre-trained models like ResNet or VGG
+
+## Challenge Context
+
+This project was developed in accordance with the official scenario outlined in the Subtle Differences Recognition Challenge Summer 2025.
